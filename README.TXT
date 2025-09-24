@@ -37,7 +37,23 @@ private ArrayList<MusicTrack> tracks;
  return items.size(4);
 }
 10. 14
-11. public void addFavoriteTrack(String files)
+
+
+11.public void addFavoriteTrack(String files){
+        ArrayList<String> favouriteTrack;
+        favouriteTrack = new ArrayList<>();
+        favouriteTrack.add(files);
+    
+
+12.public void removeDate(int index){
+        ArrayList<String> dates;
+        dates = new ArrayList<>();
+        dates.remove(2);
+    }
+
+13. It will be 5.
+
+14.
 
 
 
