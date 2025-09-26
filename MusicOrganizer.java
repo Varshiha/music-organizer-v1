@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 /**
  * A class to hold details of audio files.
  * 
@@ -10,6 +11,7 @@ public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
     private ArrayList<String> files;
+    
         
     /**
      * Create a MusicOrganizer
@@ -17,6 +19,7 @@ public class MusicOrganizer
     public MusicOrganizer()
     {
         files = new ArrayList<>();
+        
     }
     
     /**
@@ -28,6 +31,16 @@ public class MusicOrganizer
         files.add(filename);
     }
     
+    public void checkIndex(int index){
+    if(index >= 0 && index < files.size()) {
+        String filename = files.get(index);
+        System.out.println(filename);
+    }
+        else{
+               System.out.println("The valid range is " + (files.size() - 1)); 
+        }
+    }
+
     /**
      * Return the number of files in the collection.
      * @return The number of files in the collection.
